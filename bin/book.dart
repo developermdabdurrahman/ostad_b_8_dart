@@ -1,10 +1,8 @@
 import 'dart:math';
 
 class Book {
-  String title;
-  String author;
-  int publicationYear;
-  int pagesRead = 0;
+  String title, author;
+  int publicationYear, pagesRead = 0;
 
   // Static property to track total books created
   static int totalBooks = 0;
