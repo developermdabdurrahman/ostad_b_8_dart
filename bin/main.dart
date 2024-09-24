@@ -20,7 +20,6 @@ void main() {
     print("Pages Read: ${book.getPagesRead()}");
     print("Book Age: ${book.getBookAge()} years\n");
   }
-
   // Print total number of Book objects created
   print("Total number of books created: ${Book.totalBooks}");
 }

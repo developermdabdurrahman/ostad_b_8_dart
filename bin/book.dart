@@ -1,4 +1,3 @@
-import 'dart:math';
 
 class Book {
   String title, author;
@@ -15,21 +14,31 @@ class Book {
   // Method to simulate reading pages
   void read(int pages) {
     if (pages > 0) {
-      pagesRead += pages;
+      pagesRead = pagesRead+ pages;
     } else {
       print('Invalid page count:$pages. Pages must be positive.');
     }
   }
 
   // Getter methods
-  int getPagesRead() => pagesRead;
+  int getPagesRead() {
+    return pagesRead;
+  }
 
-  String getTitle() => title;
+  String getTitle() {
+    return title;
+  }
 
-  String getAuthor() => author;
+  String getAuthor() {
+    return author;
+  }
 
-  int getPublicationYear() => publicationYear;
+  int getPublicationYear() {
+    return publicationYear;
+  }
 
   // Method to calculate the age of the book
-  int getBookAge() => DateTime.now().year - publicationYear;
+  int getBookAge() {
+    return DateTime.now().year - publicationYear;
+  }
 }
